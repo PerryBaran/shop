@@ -5,6 +5,9 @@
     overflow-x: hidden;
 }
 
+:root {
+    --background-blue: rgb(4, 20, 49);
+}
 .nav {
     background-color: black;
     color: white;
@@ -57,28 +60,33 @@
 
 .feature {
     display: inline-flex;
-    height: 490px;
+    background-color: var(--background-blue);
 }
 
 .games {
     width: 100vw;
     text-align: center;
-    background-color: rgb(4, 20, 49);
     transition: 1s;
 }
 
-.games > img {
+img {
+    width: 75%;
+    max-width: 1500px;
+    max-height: 75%;
+    object-fit: contain;
 }
 
-.gameWrapper > p {
+.gameInfo {
+    width: 75%;
+}
+
+.gameInfo > p {
     color: white;
     font-size: 1.5rem;
     text-align: left;
-    background-color: rgb(4, 20, 49);
 }
 
 .gameWrapper {
-    background-color: rgb(4, 20, 49);
     width: fit-content;
 }
 
@@ -86,15 +94,16 @@
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 10rem;
-    position: absolute;
-    background-color: black;
-    color: rgb(32, 32, 32);
+    font-size: 5rem;
     opacity: 0.5;
-    width: 100px;
-    height: inherit;
+    position: relative;
+    width: 50px;
 }
 
 .right {
-    left: calc(100vw - 100px);
+  left: calc(-400vw - 110px); 
+}
+
+.left {
+    left: -500vw;
 }

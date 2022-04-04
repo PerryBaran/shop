@@ -1,5 +1,5 @@
 import React from 'react';
-import games from './featuredGames';
+import games from '../GamesList';
 
 function Featured(props) {
     const [x, setx] = React.useState(0);
@@ -27,24 +27,31 @@ function Featured(props) {
 
     const left = '<'
     const right = '>'
+
+    React.useEffect(() => {
+        setTimeout(() => {translateLeft()}, 10000);
+    });
     
     return (
         <div>
             <h2>Featured Games</h2>
             <div className='feature' >
                 {games.map((game => {
-                    return (
-                        <div key={game.name} className="games" style={translate}>
-                            <div className="gameWrapper">
-                                <img src={game.src} alt={game.name}></img>
-                                <p>{game.name}</p>
-                                <p>{game.price} <button>add to cart</button></p>
-                                
+                    if (game.featured) {
+                        return (
+                            <div key={game.name} className="games" style={translate}>
+                                <div className="gameWrapper">
+                                    <img src={game.featured} alt={game.name}></img>
+                                    <div className='gameInfo'>
+                                        <p>{game.name}</p>
+                                        <p>{game.price}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    )
+                        )   
+                    } 
                 }))}
-                <button className='navFeatured' onClick={translateRight}>{left}</button>
+                <button className='navFeatured left' onClick={translateRight}>{left}</button>
                 <button className='navFeatured right' onClick={translateLeft}>{right}</button>    
             </div>
         </div>
