@@ -6,11 +6,13 @@
 }
 
 .nav {
-    background-color: rgb(211, 211, 211);
+    background-color: black;
+    color: white;
     height: 55px;
 }
 
 .logo {
+    background-color: black;
     display: inline-flex;
     font-size: 2.5rem;
     font-style: italic;
@@ -20,6 +22,7 @@
 }
 
 .buttons {
+    background-color: black;
     display: inline-block;
     text-align: right;
     width: 60%;
@@ -52,23 +55,46 @@
     border-left: 1px solid white;
 }
 
-.homeImageContainer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
+.feature {
+    display: inline-flex;
+    height: 490px;
 }
 
-.homeimage {
-    aspect-ratio: 1;
-    object-fit: cover;
+.games {
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(4, 20, 49);
+    transition: 1s;
 }
 
-.about {
+.games > img {
+}
+
+.gameWrapper > p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: rgb(4, 20, 49);
+}
+
+.gameWrapper {
+    background-color: rgb(4, 20, 49);
+    width: fit-content;
+}
+
+.navFeatured {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 10rem;
     position: absolute;
-    top: 55px;
-    right: 0;
-    width: 600px;
-    height: 600px;
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: 1.6rem;
+    background-color: black;
+    color: rgb(32, 32, 32);
+    opacity: 0.5;
+    width: 100px;
+    height: inherit;
+}
+
+.right {
+    left: calc(100vw - 100px);
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Navbar(props) {
     return (
         <nav className='nav'>
-            <div className="logo">Elden Bling</div>
+            <div className="logo">PCGRU</div>
             <div className="buttons">
                 <Link to="/">
                     <button className="navButton borderRight">Home</button>
