@@ -1,8 +1,9 @@
 import React from 'react';
-import games from '../GamesList';
+import games from './FeatureGames';
 
 function Featured(props) {
     const [x, setx] = React.useState(0);
+    const scroll = React.useRef(true);
 
     const maxTranslate = ((games.length - 1) * 100)
     const translate = {
@@ -25,34 +26,51 @@ function Featured(props) {
         }
     }
 
+    const clickRight = () => {
+        translateLeft();
+        scroll.current = false;
+    }
+
+    const clickLeft = () => {
+        translateRight();
+        scroll.current = false;
+    }
+
+    const autoScroll = () => {
+        setTimeout(() => {
+            if(scroll.current) {
+               translateLeft() 
+            }
+        }, 10000);
+    }
+
+    React.useEffect(() => {
+        autoScroll()
+    });
+
+    //arrow text for buttons, put here to avoid conflict with JSX
     const left = '<'
     const right = '>'
 
-    React.useEffect(() => {
-        setTimeout(() => {translateLeft()}, 10000);
-    });
-    
     return (
-        <div>
-            <h2>Featured Games</h2>
-            <div className='feature' >
+        <div className ='featuredWrapper'>
+            <h2>FEATURED GAMES</h2>
+            <div className='feature'>
                 {games.map((game => {
-                    if (game.featured) {
-                        return (
-                            <div key={game.name} className="games" style={translate}>
-                                <div className="gameWrapper">
-                                    <img src={game.featured} alt={game.name}></img>
-                                    <div className='gameInfo'>
-                                        <p>{game.name}</p>
-                                        <p>{game.price}</p>
-                                    </div>
+                    return (
+                        <div key={game.name} className="games" style={translate}>
+                            <div className="gameWrapper">
+                                <img src={game.featured} alt={game.name}></img>
+                                <div className='gameInfo'>
+                                    <p>{game.name}</p>
+                                    <p>{game.price}</p>
                                 </div>
                             </div>
-                        )   
-                    } 
+                        </div>
+                    )   
                 }))}
-                <button className='navFeatured left' onClick={translateRight}>{left}</button>
-                <button className='navFeatured right' onClick={translateLeft}>{right}</button>    
+                <button className='navFeatured left' onClick={clickLeft}>{left}</button>
+                <button className='navFeatured right' onClick={clickRight}>{right}</button>    
             </div>
         </div>
     )

@@ -11,17 +11,20 @@
 .nav {
     background-color: black;
     color: white;
-    height: 55px;
+    height: 100px;
+    overflow: hidden;
 }
 
 .logo {
     background-color: black;
     display: inline-flex;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-style: italic;
     height: 100%;
     width: 40%;
-    padding-left: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 .buttons {
@@ -29,13 +32,15 @@
     display: inline-block;
     text-align: right;
     width: 60%;
+    position: relative;
+    top: 10px;
 }
 
 .navButton {
     color: white;
     background-color: inherit;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     padding-right: 20px;
     padding-left: 20px;
@@ -58,9 +63,23 @@
     border-left: 1px solid white;
 }
 
+.featuredWrapper {
+    background-color: var(--background-blue);
+    color: white;
+    padding-bottom: 10px;
+}
+
+.featuredWrapper > h2 {
+    font-weight: 100;
+    width: 90%;
+    max-width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 3rem;
+}
+
 .feature {
     display: inline-flex;
-    background-color: var(--background-blue);
 }
 
 .games {
@@ -81,7 +100,6 @@ img {
 }
 
 .gameInfo > p {
-    color: white;
     font-size: 1.5rem;
     text-align: left;
 }
@@ -106,4 +124,20 @@ img {
 
 .left {
     left: -500vw;
+}
+
+.about {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.about > h2 {
+    margin-bottom: 5px;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.about > p {
+    font-size: 1.2rem;
 }
