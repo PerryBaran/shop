@@ -7,12 +7,22 @@
 
 :root {
     --background-blue: rgb(4, 20, 49);
+    --light-grey: rgb(211, 211, 211);
 }
+
+.fakeNav {
+    height: 100px;
+}
+
 .nav {
+    position: fixed;
     background-color: black;
     color: white;
     height: 100px;
+    width: 100vw;
     overflow: hidden;
+    z-index: 100;
+    padding-right: 10px;
 }
 
 .logo {
@@ -39,9 +49,8 @@
 .navButton {
     color: white;
     background-color: inherit;
-    font-weight: bold;
+    font-weight: 100;
     font-size: 2rem;
-    cursor: pointer;
     padding-right: 20px;
     padding-left: 20px;
     height: 100%;
@@ -119,7 +128,7 @@ img {
 }
 
 .right {
-  left: calc(-400vw - 110px); 
+  left: calc(-400vw - 125px); 
 }
 
 .left {
@@ -140,4 +149,151 @@ img {
 
 .about > p {
     font-size: 1.2rem;
+}
+
+.cards {
+    width: 100vw;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.allGames {
+    font-weight: 100;
+    width: 90%;
+    max-width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 3rem;
+}
+
+.cardWrapper {
+    width: 300px;
+    height: 315px;
+    margin-top: 40px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: var(--light-grey);
+    text-align: center;
+}
+
+.card > img {
+    width: 230px;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.infoWrapper {
+    width: 230px;
+    text-align: right;
+}
+
+.infoWrapper > p {
+    text-align: left;
+}
+
+.infoWrapper > div > p {
+    display: inline-block;
+    text-align: left;
+    width: calc(100% - 90px);
+}
+
+.infoWrapper > div > div {
+    display: inline-block;
+    width: 90px;
+}
+
+@media screen and (max-width: 735px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .navButton {
+        font-size: 0.9rem;
+    }
+}
+
+
+.bigCart {
+    width: 95%;
+    max-width: 1000px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--light-grey);
+}
+
+.item > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.itemName {
+    width: 100%;
+    float: left;
+}
+
+.quantity {
+    display: inline-flex;
+    width: fit-content;
+}
+
+.quantity > p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quantity > button {
+    border-radius: 100px;
+    border: none;
+    height: 20px;
+    width: 20px;
+    font-size: 1rem;
+    overflow: visible;
+}
+
+.quantity > button > div {
+    position: relative;
+    right: 1px;
+    overflow: visible;
+}
+
+button {
+    cursor: pointer;
+}
+
+.checkOut {
+    background-color: var(--light-grey);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.quantity {
+    position: relative;
+    right: 20px;
+    color: white;
 }

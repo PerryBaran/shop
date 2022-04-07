@@ -63,7 +63,7 @@ function Featured(props) {
                                 <img src={game.featured} alt={game.name}></img>
                                 <div className='gameInfo'>
                                     <p>{game.name}</p>
-                                    <p>{game.price}</p>
+                                    <p>£{game.price}</p>
                                 </div>
                             </div>
                         </div>

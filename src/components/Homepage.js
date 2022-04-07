@@ -1,10 +1,8 @@
 import React from 'react';
-import Featured from './homepage/Featured';
 
 function Homepage(props) {
     return (
         <div>
-            <Featured />
             <div className='about'>
                 <h2>ABOUT</h2>
                 <p>
