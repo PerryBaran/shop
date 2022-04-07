@@ -2,11 +2,6 @@ import React from 'react';
 
 function Cart(props) {
     const { cart, setCart } = props
-    const [update, setUpdate] = React.useState(0)
-
-    const forceUpdate = () => {
-        setUpdate(update + 1)
-    }
 
     const total = (cart) => {
         const length = cart.length
@@ -23,21 +18,18 @@ function Cart(props) {
             tempCart[index].quantity--
         }
         setCart(tempCart);
-        forceUpdate();
     }
 
     const increaseQuantity = (index) => {
         const tempCart = cart;
         tempCart[index].quantity++
         setCart(tempCart);
-        forceUpdate();
     }
 
     const deleteItem = (index) => {
         const tempCart = cart;
         tempCart.splice(index, 1);
         setCart(tempCart);
-        forceUpdate();
     }
 
     const checkOut = () => {

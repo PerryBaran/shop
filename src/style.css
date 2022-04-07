@@ -51,9 +51,18 @@
     background-color: inherit;
     font-weight: 100;
     font-size: 2rem;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     height: 100%;
+}
+
+.cartQuantity {
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    width: 25px;
+    aspect-ratio: 1;
+    color: white
 }
 
 .borderLeft {
@@ -70,6 +79,32 @@
     border: none;
     border-right: 1px solid white;
     border-left: 1px solid white;
+}
+
+@media screen and (max-width: 685px) { 
+    .nav {
+        height: 60px;
+    }
+
+    .fakeNav {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .navButton {
+        font-size: 1.2rem;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .cartQuantity {
+        font-size: 0.7rem;
+        right: -5px;
+        top: 35px;
+    }
 }
 
 .featuredWrapper {
@@ -218,15 +253,7 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) { 
-    .logo {
-        font-size: 2.5rem;
-    }
 
-    .navButton {
-        font-size: 0.9rem;
-    }
-}
 
 
 .bigCart {
@@ -292,8 +319,3 @@ button {
     grid-template-columns: repeat(5, 1fr);
 }
 
-.quantity {
-    position: relative;
-    right: 20px;
-    color: white;
-}

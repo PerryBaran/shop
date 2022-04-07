@@ -10,6 +10,7 @@ function MainShop(props) {
         for (let i = 0; i < length; i++) {
             if (tempCart[i].game.name === game.name) {
                 tempCart[i].quantity++
+                setCart(tempCart);
                 return
             }
         }

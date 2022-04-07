@@ -1,23 +1,29 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
-import Navbar from "./components/Navbar";
-import Homepage from "./components/Homepage";
-import Shop from "./components/Shop";
-import Cart from "./components/Cart";
+import React, { Component } from 'react';
+import Router from './Router';
 
-function App() {
-  const [cart, setCart] = React.useState([]);
+class App extends Component {
+    constructor(props) {
+        super(props);
 
-  return (
-    <BrowserRouter>
-    <Navbar cart={cart}/>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/shop" element={<Shop cart={cart} setCart={setCart}/>} />
-        <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
-      </Routes>
-    </BrowserRouter>
-  );
+        this.state = {
+            cart: [],
+            setCart: this.setCart
+        }
+    }
+
+    setCart = (input) => {
+        this.setState({
+            cart: input
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <Router cart={this.state.cart} setCart={this.state.setCart}/>
+            </div>
+        );
+    }
 }
 
 export default App;
