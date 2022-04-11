@@ -1,7 +1,9 @@
 import React from 'react';
 import games from './FeatureGames';
+import styles from '../../style/Featured.module.css';
 
 function Featured(props) {
+    const { addToCart } = props;
     const [x, setx] = React.useState(0);
     const scroll = React.useRef(true);
 
@@ -53,24 +55,27 @@ function Featured(props) {
     const right = '>'
 
     return (
-        <div className ='featuredWrapper'>
-            <h2>FEATURED GAMES</h2>
-            <div className='feature'>
+        <div className ={styles.wrapper}>
+            <h2>FEATURED</h2>
+            <div className={styles.feature}>
                 {games.map((game => {
                     return (
-                        <div key={game.name} className="games" style={translate}>
-                            <div className="gameWrapper">
-                                <img src={game.featured} alt={game.name}></img>
-                                <div className='gameInfo'>
+                        <div key={game.name} className={styles.featuredGames} style={translate}>
+                            <div>
+                                <img src={game.featured} alt={game.name} className={styles.featuredImg}></img>
+                                <div className={styles.featuredGameInfo}>
                                     <p>{game.name}</p>
                                     <p>£{game.price}</p>
+                                    <div>
+                                        <button onClick={() => addToCart(game)} className={styles.addToCart}>Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     )   
                 }))}
-                <button className='navFeatured left' onClick={clickLeft}>{left}</button>
-                <button className='navFeatured right' onClick={clickRight}>{right}</button>    
+                <button className={`${styles.featuredNav} ${styles.backward}`} onClick={clickLeft}>{left}</button>
+                <button className={`${styles.featuredNav} ${styles.forward}`} onClick={clickRight}>{right}</button>    
             </div>
         </div>
     )

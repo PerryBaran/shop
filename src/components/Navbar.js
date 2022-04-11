@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../style/Navbar.module.css';
 
 function Navbar(props) {
     const { cart } = props;
@@ -7,22 +8,22 @@ function Navbar(props) {
 
     return (
         <div>
-            <div className='nav'>
-                <div className="logo">PCGRU</div>
-                <div className="buttons">
+            <div className={styles.navbar}>
+                <div className={styles.logo}>PCGRU</div>
+                <div className={styles.navButtons}>
                     <Link to="/">
-                        <button className="navButton borderRight">Home</button>
+                        <button className={`${styles.navButton} ${styles.borderRight}`}>Home</button>
                     </Link>
                     <Link to="/shop">
-                        <button className="navButton borderMiddle">Shop</button>
+                        <button className={`${styles.navButton} ${styles.borderMiddle}`}>Shop</button>
                     </Link>
                     <Link to="/cart">
-                        <button className="navButton borderLeft">Cart</button>      
+                        <button className={`${styles.navButton} ${styles.borderLeft}`}>Cart</button>      
                     </Link>  
                 </div>
                 <Quantity cart={cart}/> 
             </div>
-            <div className='fakeNav'></div>
+            <div className={styles.fakeNav}></div>
         </div>
     );
 }
@@ -37,7 +38,7 @@ function Quantity(props) {
 
     if (quantity > 0) {
         return (
-            <div className="cartQuantity">{quantity}</div>
+            <div className={styles.cartQuantity}>{quantity}</div>
         )
     }
 }

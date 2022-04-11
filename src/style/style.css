@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    overflow-x: hidden;
+}
+
+:root {
+    --background-blue: rgb(4, 20, 49);
+    --darker-blue:rgb(2, 11, 27);
+    --light-grey: rgb(211, 211, 211);
+    --light-black: rgb(13, 13, 13);
+    --offwhite: rgb(235, 235, 235);
+}
+
+button {
+    cursor: pointer;
+}
+

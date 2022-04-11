@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../style/Cart.module.css';
 
 function Cart(props) {
     const { cart, setCart } = props
@@ -37,32 +38,31 @@ function Cart(props) {
     }
 
     return (
-        <div className="bigCart">
+        <div className={styles.cart}>
             {cart.map((item => {
                 return (
-                    <div key={item.game.name} className="item">
+                    <div key={item.game.name} className={styles.item}>
                         <img src={item.game.src} alt={item.game.name}></img>
-                        
-                        <div className="itemName">
+                        <div className={styles.itemName}>
                             <p>{item.game.name}</p>
                             <p>PC | Steam</p>
                         </div>
-                        <div className="quantity">
-                            <button onClick={() => reduceQuantity(cart.indexOf(item))}><div >-</div></button>
+                        <div className={styles.quantity}>
+                            <button onClick={() => reduceQuantity(cart.indexOf(item))}>-</button>
                             <p>{item.quantity}</p>
-                            <button onClick={() => increaseQuantity(cart.indexOf(item))}><div>+</div></button>
+                            <button onClick={() => increaseQuantity(cart.indexOf(item))}>+</button>
                         </div>    
                         <p>£{item.game.price}</p>
-                        <button onClick={() => deleteItem(cart.indexOf(item))}>Delete</button>
+                        <button onClick={() => deleteItem(cart.indexOf(item))} className={styles.cartButtons}>Delete</button>
                     </div>
                 )
             }))}
-            <div className="checkOut">
+            <div className={styles.checkOut}>
                 <div></div>
                 <div></div>
                 <div>Total: </div>
                 <p>£{total(cart)}</p>
-                <button onClick={checkOut}>Check Out</button>
+                <button onClick={checkOut} className={styles.cartButtons}>Check Out</button>
             </div>
         </div>
     );

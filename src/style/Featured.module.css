@@ -1,0 +1,98 @@
+.wrapper {
+    background-color: var(--background-blue);
+    color: white;
+
+    padding-bottom: 10px;
+}
+
+.wrapper > h2 {
+    width: 90%;
+    max-width: 1000px;
+
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.feature {
+    display: inline-flex;
+}
+
+.featuredGames {
+    width: 100vw;
+
+    text-align: center;
+
+    transition: 1s;
+}
+
+.featuredImg {
+    max-height: 75%;
+    width: 75%;
+    max-width: 1100px;
+    
+    object-fit: contain;
+}
+
+.featuredGameInfo {
+    width: 75%;
+    max-width: 1100px;
+
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.featuredGameInfo > p {
+    width: calc(100% - 150px);
+
+    text-align: left;
+
+    display: inline-block;
+}
+
+.featuredGameInfo > div {
+    width: 150px;
+
+    display: inline-block;
+}
+
+.addToCart {
+    background-color: white;
+    color: var(--background-blue);
+
+    width: 150px;
+    height: 30px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.addToCart:hover {
+    background-color: var(--offwhite);
+}
+
+.featuredNav {
+    background: none;
+    opacity: 0.7;
+
+    width: 50px;
+
+    border: none;
+
+    font-size: 5rem;
+
+    position: relative;
+}
+
+.forward {
+  left: calc(-400vw - 125px); 
+}
+
+.backward {
+    left: -500vw;
+}

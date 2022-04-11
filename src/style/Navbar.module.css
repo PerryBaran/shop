@@ -1,0 +1,113 @@
+.fakeNav {
+    height: 100px;
+}
+
+.navbar {
+    background-color: var(--light-black);
+    color: white;
+
+    height: 100px;
+    width: 100vw;
+
+    padding-right: 10px;
+
+    position: fixed;
+
+    z-index: 100;
+    overflow: hidden;
+}
+
+.logo {
+    background-color: var(--light-black);
+
+    height: 100%;
+    width: 40%;
+
+    font-size: 4rem;
+    font-style: italic;
+
+    display: inline-flex;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.navButtons {
+    background-color: var(--light-black);
+
+    width: 60%;
+
+    text-align: right;
+
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.navButton {
+    background-color: inherit;
+    color: white;
+
+    height: 100%;
+
+    padding-right: 30px;
+    padding-left: 30px;
+
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.cartQuantity {
+    color: white;
+
+    aspect-ratio: 1;
+    width: 25px;
+
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.borderLeft {
+    border: none;
+    border-left: 1px solid white;
+}
+
+.borderRight {
+    border: none;
+    border-right: 1px solid white;
+}
+
+.borderMiddle {
+    border: none;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+@media screen and (max-width: 685px) { 
+    .nav {
+        height: 60px;
+    }
+
+    .fakeNav {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .navButton {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        font-size: 1.2rem;
+    }
+
+    .cartQuantity {
+        font-size: 0.7rem;
+
+        top: 35px;
+        right: -5px;
+    }
+}
