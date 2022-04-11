@@ -1,0 +1,57 @@
+.background {
+    position: fixed;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    z-index: -100;
+}
+
+.wrapper {
+
+    width: 440px;
+
+    margin-top: 225px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.wrapper > p {
+    background-color: rgba(13, 13, 13, 0.8);
+    color: white;
+
+    width: 300px;
+    
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: block;
+
+    background-color: white;
+    color: var(--background-blue);
+
+    margin-top: 40px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    border-radius: 2px;
+
+    font-size: 1.3rem;
+    font-weight: 100;
+
+    box-shadow: 0 0 3px white;
+
+    text-decoration: none;
+}
+
+.nav:hover {
+    background-color: var(--background-blue);
+    color: white;
+
+    box-shadow: 0 0 6px var(--background-blue);
+}

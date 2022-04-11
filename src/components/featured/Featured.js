@@ -1,5 +1,7 @@
 import React from 'react';
-import games from './FeatureGames';
+import featured from './FeatureGames';
+import games from '../GamesList';
+import { Link } from "react-router-dom";
 import styles from '../../style/Featured.module.css';
 
 function Featured(props) {
@@ -7,7 +9,7 @@ function Featured(props) {
     const [x, setx] = React.useState(0);
     const scroll = React.useRef(true);
 
-    const maxTranslate = ((games.length - 1) * 100)
+    const maxTranslate = ((featured.length - 1) * 100)
     const translate = {
         transform: `translate(-${x}vw)`
     }
@@ -58,11 +60,14 @@ function Featured(props) {
         <div className ={styles.wrapper}>
             <h2>FEATURED</h2>
             <div className={styles.feature}>
-                {games.map((game => {
+                {featured.map((game => {
+                    const id = games.indexOf(game);
                     return (
                         <div key={game.name} className={styles.featuredGames} style={translate}>
                             <div>
-                                <img src={game.featured} alt={game.name} className={styles.featuredImg}></img>
+                                <Link to={`${id}`}>
+                                    <img src={game.featured} alt={game.name} className={styles.featuredImg}></img>
+                                </Link>
                                 <div className={styles.featuredGameInfo}>
                                     <p>{game.name}</p>
                                     <p>£{game.price}</p>

@@ -4,6 +4,9 @@
 }
 
 .item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
     background-color: var(--light-grey);
 
     width: 100%;
@@ -11,9 +14,6 @@
     margin-top: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
 }
 
 .item > img {
@@ -61,12 +61,12 @@
 }
 
 .checkOut {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
     background-color: var(--light-grey);
 
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
 }

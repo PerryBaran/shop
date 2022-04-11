@@ -5,7 +5,6 @@ import styles from '../style/Navbar.module.css';
 function Navbar(props) {
     const { cart } = props;
 
-
     return (
         <div>
             <div className={styles.navbar}>

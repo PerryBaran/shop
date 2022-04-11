@@ -1,11 +1,34 @@
 import React from 'react';
+import games from './GamesList';
+import { Link } from 'react-router-dom';
+import styles from '../style/Homepage.module.css';
 
 function Homepage(props) {
+    const game = promoted(games, 'Elden Ring')
+
     return (
         <div>
-           
+            <img src={game.featured} alt={game.name} className={styles.background} />
+            <div className={styles.wrapper}>
+                <p>OUT NOW</p>
+                <Link to="/">
+                    <button className={styles.nav}>Click for details</button>
+                </Link>
+                <Link to="/shop">
+                    <button className={styles.nav}>Shop now</button>
+                </Link>
+            </div>    
         </div>
     );
+}
+
+const promoted = (games, game) => {
+    const length = games.length
+    for (let i = 0; i < length; i++) {
+        if (games[i].name === game) {
+            return games[i]
+        }
+    }
 }
 
 export default Homepage;
