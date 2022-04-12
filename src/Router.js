@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
-import Item from "./components/Item"
+import Itempage from "./components/Itempage"
 
 function Router(props) {
   const { cart, setCart } = props;
@@ -32,7 +32,7 @@ function Router(props) {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/shop" element={<Shop addToCart={addToCart}/>}/>
-        <Route path="/shop/:id" element={<Item />}/>
+        <Route path="/shop/:id" element={<Itempage addToCart={addToCart}/>}/>
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
       </Routes>
     </BrowserRouter>
