@@ -5,7 +5,9 @@ function Item(props) {
     const { game, addToCart } = props;
     return (
         <div className={style.wrapper}>
-            <img src={game.src} alt={game.name}/>
+            <div className={style.ImgWrapper}>
+                <img src={game.src} alt={game.name}/>
+            </div>    
             <div className={style.info}>
                 <div className={style.top}>
                     <div className={style.header}>

@@ -7,12 +7,21 @@
     overflow: hidden;
 }
 
-.wrapper > img {
+.ImgWrapper {
     display: inline-block;
-
     height: 400px;
-
+    width: 300px;
     margin-right: 10px;
+
+    overflow: hidden;
+}
+
+.ImgWrapper > img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: top;
 }
 
 .info {
@@ -58,9 +67,12 @@
 .bottom >  p {
     display: inline-block;
 
+    color: var(--background-blue);
+
     width: calc(100% - 150px);
 
     font-size: 1.8rem;
+    font-weight: bold;
     text-align: left;
 }
 
@@ -100,4 +112,18 @@
         margin: auto;
         margin-top: 10px;
     }
+
+    .bottom {
+        height: 65px;
+    }
+
+    .bottom >  p {
+        display:block;
+        width: 100%;
+    }
+    
+    .bottom > div {
+        display: block;
+    }
+    
 }

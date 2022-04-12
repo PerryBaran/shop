@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import Itempage from "./components/Itempage"
+import Bottombar from "./components/Bottombar";
 
 function Router(props) {
   const { cart, setCart } = props;
@@ -35,6 +36,7 @@ function Router(props) {
         <Route path="/shop/:id" element={<Itempage addToCart={addToCart}/>}/>
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
       </Routes>
+    <Bottombar />
     </BrowserRouter>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import games from '../GamesList';
 import style from '../../style/Suggestions.module.css';
 
@@ -23,15 +24,20 @@ function Suggestions(props) {
     return (
         <div className={style.suggestions}>
             <h2>Similar Games</h2>
-            <div className={style.cards}>
-                {suggestions.map((game => {
-                    return (
-                        <div key={game.name} className={style.card}>
-                            <img src={game.src} alt={game.name} />
-                            <p>{game.name}</p>
-                        </div>
-                    )
-                }))}
+            <div className={style.cardsWrapper}>
+                <div className={style.cards}>
+                    {suggestions.map((game => {
+                        const id = games.indexOf(game)
+                        return (
+                            <div key={game.name} className={style.card}>
+                                <Link to={`../shop/${id}`}>
+                                    <img src={game.src} alt={game.name} className={style.image}/>
+                                    <p className={style.name}>{game.name}</p>
+                                </Link>    
+                            </div>   
+                        )
+                    }))}
+                </div>
             </div>
         </div>
     );
