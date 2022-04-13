@@ -58,5 +58,18 @@
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 685px) {
+    .subContainer {
+        padding-right: 0px;
+    }
+
+    .subContainer > input {
+        width: 110px;
+    }
+    
+    .subContainer > button {
+        width: 70px;
+    }
+}
 
 

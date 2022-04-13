@@ -1,4 +1,6 @@
 .wrapper {
+    position: relative;
+
     background-color: var(--background-blue);
     color: white;
 
@@ -86,13 +88,21 @@
 
     font-size: 5rem;
 
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    top: 0;
 }
 
 .forward {
-  left: calc(-400vw - 125px); 
+    right: 10px;
 }
 
-.backward {
-    left: -500vw;
+@media screen and (max-width: 685px) {
+    .featuredNav {
+        font-size: 3rem;
+    }
+
+    .forward {
+        right: 0;
+    }
 }
