@@ -1,8 +1,62 @@
 .wrapper {
     position:static;
     bottom: 0;
-    background-color: green;
-    height: 200px;
+
+    background-color: rgb(241, 241, 241);
+    border-top: 2px solid var(--light-grey);
+
+    height: 140px;
     width: 100%;
     z-index: 20px;
+    
+    overflow: hidden;
 }
+
+.subContainer {
+    display: inline-block;
+
+    height: 100%;
+    width: calc(50% - 20px);
+
+    margin: 10px;
+    padding-right: 30px;
+}
+
+.subContainer > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subContainer > input {
+    border: 1px solid var(--background-blue);
+}
+
+.subContainer > button {
+    background-color: var(--background-blue);
+    color: white;
+    border: 1px solid var(--background-blue);
+}
+
+.container {
+    display: inline-block;
+
+    height: 100%;
+    width: calc(25% - 20px);
+
+    margin: 10px;
+}
+
+.link {
+    color: black;
+
+    margin-top: 10px;
+    
+    cursor: pointer;
+}
+
+.whyIsTheMarginTop10NotWorkingFora {
+    margin-bottom: 10px;
+}
+
+
+

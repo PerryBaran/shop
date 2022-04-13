@@ -7,7 +7,7 @@ function Homepage(props) {
     const game = promoted(games, 'Elden Ring');
     const id = games.indexOf(game);
     return (
-        <div>
+        <div className="backgroundContainer">
             <img src={game.featured} alt={game.name} className={styles.background} />
             <div className={styles.wrapper}>
                 <p>OUT NOW</p>

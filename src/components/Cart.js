@@ -38,7 +38,7 @@ function Cart(props) {
     }
 
     return (
-        <div className={styles.cart}>
+        <div className={`backgroundContainer ${styles.cart}`}>
             {cart.map((item => {
                 return (
                     <div key={item.game.name} className={styles.item}>

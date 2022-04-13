@@ -8,7 +8,7 @@ function Navbar(props) {
     return (
         <div>
             <div className={styles.navbar}>
-                <div className={styles.logo}>PCGRU</div>
+                <div className={styles.logo}>SteysKeys</div>
                 <div className={styles.navButtons}>
                     <Link to="/">
                         <button className={`${styles.navButton} ${styles.borderRight}`}>Home</button>

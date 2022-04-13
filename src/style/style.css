@@ -20,3 +20,14 @@ button {
 a {
     text-decoration: none;
 }
+
+/* calc(height of viewport - height of navbar - height of bottombar)*/
+.backgroundContainer {
+    min-height: calc(100vh - 100px - 140px);
+}
+
+@media screen and (max-width: 685px) {
+    .backgroundContainer {
+        min-height: calc(100vh - 60px - 140px);
+    }
+}

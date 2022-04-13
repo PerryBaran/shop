@@ -10,7 +10,7 @@ function Itempage(props) {
     const game = games[id];
 
     return (
-        <div>
+        <div className='backgroundContainer'>
             <Item game={game} addToCart={addToCart} />
             <Suggestions id={id}/>
         </div>
