@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.6d237673.css",
-    "main.js": "/shopping-cart/static/js/main.bb20cddb.js",
+    "main.css": "/shopping-cart/static/css/main.073ad92c.css",
+    "main.js": "/shopping-cart/static/js/main.9c163452.js",
+    "static/media/EldenRingCover.png": "/shopping-cart/static/media/EldenRingCover.404d43d80d4cf5241ea7.png",
     "static/media/GhostwireTokyoCover.jpg": "/shopping-cart/static/media/GhostwireTokyoCover.840f3a54f51f3d01d9f2.jpg",
     "static/media/DyingLight2Cover.jpg": "/shopping-cart/static/media/DyingLight2Cover.64f4a520d8a92d97822c.jpg",
-    "static/media/EldenRingCover.jpg": "/shopping-cart/static/media/EldenRingCover.c13110ce683de74b892b.jpg",
     "static/media/HaloMCC.png": "/shopping-cart/static/media/HaloMCC.c429727efeed94ea4dd9.png",
     "static/media/GodOfWarCover.jpg": "/shopping-cart/static/media/GodOfWarCover.d447b7ed41b6036af4f2.jpg",
     "static/media/FarmingSimulator22Cover.jpg": "/shopping-cart/static/media/FarmingSimulator22Cover.b6fcfb6c21413b27b38f.jpg",
@@ -28,11 +28,11 @@
     "static/media/GodOfWar.webp": "/shopping-cart/static/media/GodOfWar.38a6d02d27adb3668579.webp",
     "static/media/EldenRing.webp": "/shopping-cart/static/media/EldenRing.97df361f010752f99ec7.webp",
     "index.html": "/shopping-cart/index.html",
-    "main.6d237673.css.map": "/shopping-cart/static/css/main.6d237673.css.map",
-    "main.bb20cddb.js.map": "/shopping-cart/static/js/main.bb20cddb.js.map"
+    "main.073ad92c.css.map": "/shopping-cart/static/css/main.073ad92c.css.map",
+    "main.9c163452.js.map": "/shopping-cart/static/js/main.9c163452.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d237673.css",
-    "static/js/main.bb20cddb.js"
+    "static/css/main.073ad92c.css",
+    "static/js/main.9c163452.js"
   ]
 }
