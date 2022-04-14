@@ -1,6 +1,8 @@
 .suggestions {
     width: 90%;
     max-width: 1120px;
+
+    margin-bottom: 20px;
 }
 
 .cardsWrapper {

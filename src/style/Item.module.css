@@ -99,6 +99,7 @@
 @media screen and (max-width: 700px) {
     .wrapper {
         height: fit-content;
+        
         margin-top: 50px;
     }
 
@@ -109,6 +110,9 @@
 
     .info {
         display: block;
+
+        width: 100%;
+
         margin: auto;
         margin-top: 10px;
     }
@@ -119,6 +123,7 @@
 
     .bottom >  p {
         display:block;
+
         width: 100%;
     }
     
