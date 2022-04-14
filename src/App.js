@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Router from './Router';
+import Main from './Main';
 
 class App extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Router cart={this.state.cart} setCart={this.state.setCart}/>
+                <Main cart={this.state.cart} setCart={this.state.setCart}/>
             </div>
         );
     }
