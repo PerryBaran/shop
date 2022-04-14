@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.45983a51.css",
+    "main.css": "/shopping-cart/static/css/main.58ebd94b.css",
     "main.js": "/shopping-cart/static/js/main.9c163452.js",
     "static/media/EldenRingCover.png": "/shopping-cart/static/media/EldenRingCover.404d43d80d4cf5241ea7.png",
     "static/media/GhostwireTokyoCover.jpg": "/shopping-cart/static/media/GhostwireTokyoCover.840f3a54f51f3d01d9f2.jpg",
@@ -28,11 +28,11 @@
     "static/media/GodOfWar.webp": "/shopping-cart/static/media/GodOfWar.38a6d02d27adb3668579.webp",
     "static/media/EldenRing.webp": "/shopping-cart/static/media/EldenRing.97df361f010752f99ec7.webp",
     "index.html": "/shopping-cart/index.html",
-    "main.45983a51.css.map": "/shopping-cart/static/css/main.45983a51.css.map",
+    "main.58ebd94b.css.map": "/shopping-cart/static/css/main.58ebd94b.css.map",
     "main.9c163452.js.map": "/shopping-cart/static/js/main.9c163452.js.map"
   },
   "entrypoints": [
-    "static/css/main.45983a51.css",
+    "static/css/main.58ebd94b.css",
     "static/js/main.9c163452.js"
   ]
 }
