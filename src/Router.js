@@ -28,7 +28,7 @@ function Router(props) {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shopping-cart">
     <Navbar cart={cart}/>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
