@@ -10,12 +10,13 @@ function Homepage(props) {
         <div className="backgroundContainer">
             <img src={game.featured} alt={game.name} className={styles.background} />
             <div className={styles.wrapper}>
+                <p>ELDEN RING</p>
                 <p>OUT NOW</p>
                 <Link to={`/shop/${id}`}>
                     <button className={styles.nav}>Click for details</button>
                 </Link>
                 <Link to="/shop">
-                    <button className={styles.nav}>Shop now</button>
+                    <button className={styles.nav}>Continue to Shop</button>
                 </Link>
             </div>    
         </div>

@@ -23,7 +23,7 @@ function Suggestions(props) {
 
     return (
         <div className={style.suggestions}>
-            <h2>Similar Games</h2>
+            <h2>BEST PICKS FOR YOU</h2>
             <div className={style.cardsWrapper}>
                 <div className={style.cards}>
                     {suggestions.map((game => {

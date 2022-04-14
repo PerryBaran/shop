@@ -30,6 +30,10 @@
     float: left;
 }
 
+.name {
+    font-weight: bold;
+}
+
 .quantity {
     display: inline-flex;
 }
@@ -69,4 +73,14 @@
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.cartButton {
+    width: 80px;
+}
+
+@media screen and (max-width: 450px) {
+    .cartButton {
+        margin-right: 10px;
+    }
 }

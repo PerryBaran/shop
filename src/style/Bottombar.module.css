@@ -71,4 +71,16 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+
+    .subContainer > input {
+        width: 105px;
+    }
+    
+    .subContainer > button {
+        width: 65px;
+        font-size: 0.8rem;
+    }
+}
+
 

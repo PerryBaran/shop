@@ -20,7 +20,7 @@ import sekiro from './images/box/Sekiro.jpg';
 import borderlands3 from './images/box/Borderlands3.jpg';
 
 import dylingLightCover from './images/cover/DyingLight2Cover.jpg';
-import eldenRingCover from './images/cover/EldenRingCover.jpg';
+import eldenRingCover from './images/cover/EldenRingCover.png';
 import farmingSimulator22Cover from './images/cover/FarmingSimulator22Cover.jpg';
 import ghostwireTokyoCover from './images/cover/GhostwireTokyoCover.jpg';
 import godOfWarCover from './images/cover/GodOfWarCover.jpg';

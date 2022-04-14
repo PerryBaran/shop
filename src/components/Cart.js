@@ -44,7 +44,7 @@ function Cart(props) {
                     <div key={item.game.name} className={styles.item}>
                         <img src={item.game.src} alt={item.game.name}></img>
                         <div className={styles.itemName}>
-                            <p>{item.game.name}</p>
+                            <p className={styles.name}>{item.game.name}</p>
                             <p>PC | Steam</p>
                         </div>
                         <div className={styles.quantity}>
@@ -62,7 +62,7 @@ function Cart(props) {
                 <div></div>
                 <div>Total: </div>
                 <p>£{total(cart)}</p>
-                <button onClick={checkOut} className={styles.cartButtons}>Check Out</button>
+                <button onClick={checkOut} className={styles.cartButton}>Check Out</button>
             </div>
         </div>
     );

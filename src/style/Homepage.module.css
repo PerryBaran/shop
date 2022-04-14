@@ -4,15 +4,14 @@
     right: -9999px;
     margin: auto;
     z-index: -100;
+    max-height: 100vh;
+    min-width: 100vw;
 }
 
 .wrapper {
-    width: 440px;
+    width: fit-content;
 
-    margin-top: 225px;
     padding: 20px;
-
-    border-radius: 10px;
 
     text-align: center;
 }
@@ -21,7 +20,9 @@
     background-color: rgba(13, 13, 13, 0.8);
     color: white;
 
-    width: 300px;
+    width: 330px;
+
+    padding: 5px;
     
     font-size: 3rem;
     font-weight: bold;
@@ -53,32 +54,4 @@
     color: white;
 
     box-shadow: 0 0 6px var(--background-blue);
-}
-
-@media screen and (max-width: 870px) {
-    .background {
-        width: 1500px
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .background {
-        width: 1200px
-    }
-}
-
-@media screen and (max-width: 570px) {
-    .background {
-        width: 1000px
-    }
-}
-
-@media screen and (max-width: 460px) {
-    .background {
-        width: 850px
-    }
-
-    .wrapper {
-        margin-top: 100px;
-    }
 }
