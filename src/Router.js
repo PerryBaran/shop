@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
@@ -31,7 +31,8 @@ function Router(props) {
     <BrowserRouter>
     <Navbar cart={cart}/>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Homepage />} />
         <Route path="/shop" element={<Shop addToCart={addToCart}/>}/>
         <Route path="/shop/:id" element={<Itempage addToCart={addToCart}/>}/>
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
