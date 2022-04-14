@@ -116,19 +116,4 @@
         margin: auto;
         margin-top: 10px;
     }
-
-    .bottom {
-        height: 65px;
-    }
-
-    .bottom >  p {
-        display:block;
-
-        width: 100%;
-    }
-    
-    .bottom > div {
-        display: block;
-    }
-    
 }
