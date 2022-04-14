@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home/static/css/main.6d237673.css",
-    "main.js": "/home/static/js/main.f55e89ca.js",
+    "main.js": "/home/static/js/main.9b050ec0.js",
     "static/media/GhostwireTokyoCover.jpg": "/home/static/media/GhostwireTokyoCover.840f3a54f51f3d01d9f2.jpg",
     "static/media/DyingLight2Cover.jpg": "/home/static/media/DyingLight2Cover.64f4a520d8a92d97822c.jpg",
     "static/media/EldenRingCover.jpg": "/home/static/media/EldenRingCover.c13110ce683de74b892b.jpg",
@@ -29,10 +29,10 @@
     "static/media/EldenRing.webp": "/home/static/media/EldenRing.97df361f010752f99ec7.webp",
     "index.html": "/home/index.html",
     "main.6d237673.css.map": "/home/static/css/main.6d237673.css.map",
-    "main.f55e89ca.js.map": "/home/static/js/main.f55e89ca.js.map"
+    "main.9b050ec0.js.map": "/home/static/js/main.9b050ec0.js.map"
   },
   "entrypoints": [
     "static/css/main.6d237673.css",
-    "static/js/main.f55e89ca.js"
+    "static/js/main.9b050ec0.js"
   ]
 }
